@@ -1,0 +1,13 @@
+.container {
+  padding: 40px;
+}
+
+.gambar {
+  max-width: 100%;
+}
+
+.background {
+  width: 100vw;
+  height: 100vh;
+  background: #3e1e68;
+}
