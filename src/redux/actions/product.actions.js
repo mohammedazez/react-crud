@@ -33,7 +33,7 @@ export function getProduct() {
     dispatch(getProductRequest());
 
     axios
-      .get("https://5f51a6865e98480016123bdd.mockapi.io/products")
+      .get("https://5f51a6945e98480016123be3.mockapi.io/product")
       .then((result) => dispatch(getProductSuccess(result.data)))
       .catch((error) => dispatch(getProductFailed(error)));
   };
