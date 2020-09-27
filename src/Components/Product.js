@@ -20,27 +20,9 @@ function Product(props) {
       ) : (
         props.products.map((item, index) => (
           <div key={index}>
-            {/* <h3>name: {item.name}</h3>
-            <h3>Avatar: {item.avatar}</h3> */}
             <div className="container">
-              {/* <Card style={{ width: "18rem" }}>
-                <Card.Img
-                  variant="top"
-                  src="https://i.pinimg.com/originals/b8/bf/86/b8bf8658dd216b2ec14a1b9a27123f20.gif"
-                />
-                <img src={item.avatar} />
-                <Card.Body>
-                  <Card.Title>{item.name}</Card.Title>
-                  <Card.Text>Omagat who is this picture</Card.Text>
-                  <Button variant="primary">See The profile</Button>
-                </Card.Body>
-              </Card> */}
               <CardDeck>
                 <Card>
-                  {/* <Card.Img
-                    variant="top"
-                    src="https://i.pinimg.com/originals/b8/bf/86/b8bf8658dd216b2ec14a1b9a27123f20.gif"
-                  /> */}
                   <img className="gambar" src={item.avatar} alt="people" />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
@@ -53,7 +35,6 @@ function Product(props) {
                   </Card.Footer>
                 </Card>
                 <Card>
-                  {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <img className="gambar" src={item.avatar} alt="people" />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
@@ -66,7 +47,6 @@ function Product(props) {
                   </Card.Footer>
                 </Card>
                 <Card>
-                  {/* <Card.Img variant="top" src="holder.js/100px160" /> */}
                   <img className="gambar" src={item.avatar} alt="people" />
                   <Card.Body>
                     <Card.Title>{item.name}</Card.Title>

@@ -17,6 +17,7 @@ function getProductReducer(state = initialState, action) {
       return {
         ...state,
         isLoading: true,
+        data: action.payload,
       };
     case GET_PRODUCT_SUCCESS:
       console.log("sukses", action);
@@ -37,3 +38,5 @@ function getProductReducer(state = initialState, action) {
 }
 
 export default getProductReducer;
+
+// https://stackoverflow.com/questions/59756010/how-to-use-axios-to-get-api-items-in-redux
